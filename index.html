@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joey Ann Ramos - Profile</title>
+  <style>
+    :root {
+      --primary-dark: #d97b48;
+      --primary-light: #fff8f0;
+      --accent: #f2c48d;
+      --accent-hover: #f8945f;
+      --text-color: #333;
+      --bg-color: #fff8f0;
+      --primary-color: #d97b48;
+      --secondary-color: #d97b48;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: var(--primary-light);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--accent);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: var(--accent-hover);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #profile img {
+      width: 160px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+      border: 4px solid var(--accent);
+      transition: transform 0.3s ease;
+    }
+    #profile img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--primary-dark);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th {
+      background: var(--accent);
+      color: #fff;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    .skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #fff;
+  font-size: 1em;
+}
+
+.skills-table th, .skills-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.skills-table thead th {
+  background: #d97b48;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skills-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #d97b48;
+  text-align: center;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #fff;
+  font-size: 1em;
+}
+
+.edu-table th, .edu-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.edu-table thead th {
+  background: #d97b48;
+  color: #fff;
+  font-weight: bold;
+}
+
+.edu-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #d97b48;
+  text-align: center;
+}
+    
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    input, textarea, button {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: var(--accent-hover);
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: left;
+      font-size: 1em;
+      line-height: 1.8;
+      background: var(--accent);
+      color: #000;
+      padding: 25px;
+      border-radius: 8px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info a {
+      color: #1e0d0d;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary-dark);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joey Ann Ramos</h1>
+    <p>First-Year BSIT Student | Aspiring Software Engineer</p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="profile">
+    <h2>Profile Picture</h2>
+    <a href="https://www.facebook.com/share/1HEjzostJ4/" target="_blank">
+      <img src="me.jpg" alt="Profile Picture">
+    </a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m <strong>Joey Ann Ramos</strong>, 18 years old and currently a first-year college student at <strong>Pateros Technological College</strong> taking up <em>Bachelor of Science in Information Technology</em>.</p>
+    <p>I love spending time with my loved ones and expanding my wisdom. My dream is to become a successful software engineer like my big brother.</p>
+  </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+
+  <!-- Programming Languages -->
+  <h3>Programming Languages</h3>
+  <table class="skills-table">
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Details</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>C++</td><td>Core programming</td><td>High</td></tr>
+      <tr><td>Python</td><td>Scripting & automation</td><td>High</td></tr>
+      <tr><td>HTML</td><td>Web structure</td><td>High</td></tr>
+      <tr><td>CSS / SCSS</td><td>Styling</td><td>Average</td></tr>
+      <tr><td>Java</td><td>Object-oriented basics</td><td>Beginner</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Soft Skills -->
+  <h3>Soft Skills</h3>
+  <table class="skills-table">
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Details</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Critical Thinking</td><td>Problem-solving & analysis</td><td>Strong</td></tr>
+      <tr><td>Communication</td><td>Collaboration & teamwork</td><td>Strong</td></tr>
+      <tr><td>Adaptability</td><td>Willingness to learn</td><td>Strong</td></tr>
+      <tr><td>Time Management</td><td>Organizing tasks effectively</td><td>Strong</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Version Control & DSA -->
+  <h3>Version Control & Data Structures</h3>
+  <table class="skills-table">
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Details</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Git & GitHub</td><td>Collaboration & repositories</td><td>Average</td></tr>
+      <tr><td>DSA</td><td>Arrays, Linked Lists, Sorting & Searching</td><td>Average</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <!-- College -->
+  <h3>College</h3>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>School</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BS Information Technology</td>
+        <td>Pateros Technological College</td>
+        <td>
+          Address: 205 College Street, Sto. Rosario-Kanluran, Pateros, Metro Manila<br>
+          Year Level: 1st Year<br>
+          SWA/GWA: 1.5<br>
+          Units Enrolled: 23<br>
+          Duration: 4 Years
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Senior High School -->
+  <h3>Senior High School</h3>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>School</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Senior High School</td>
+        <td>Benigno “Ninoy” S. Aquino High School</td>
+        <td>
+          Public | Address: Aguho Street, Barangay Comembo, Taguig City<br>
+          Years: 2022–2024<br>
+          Honors: With Honors
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Junior High School -->
+  <h3>Junior High School</h3>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>School</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior High School</td>
+        <td>Benigno “Ninoy” S. Aquino High School</td>
+        <td>
+          Public | Address: Aguho Street, Barangay Comembo, Taguig City<br>
+          Years: 2018–2022<br>
+          Honors: With Honors
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Elementary -->
+  <h3>Elementary</h3>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>School</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Elementary</td>
+        <td>Pembo Elementary School</td>
+        <td>
+          Public | Address: Escarlata Street, Barangay Pembo, Taguig City<br>
+          Years: 2012–2018
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse" style="text-align:center; margin-top:10px; color:green;"></p>
+
+   <div class="contact-info">
+  <p>📞 <strong>Phone:</strong> 
+    <a href="tel:09155945129">0915 594 5129</a>
+  </p>
+  <p>✉️ <strong>Email:</strong> 
+    <a href="mailto:joeyannramos0@gmail.com">joeyannramos0@gmail.com</a>
+  </p>
+  <p>📍 <strong>Address:</strong> 
+    <a href="https://www.google.com/maps/search/?api=1&query=Blk+27+Lot+11+Rosal+Street,+Pembo,+Taguig+City,+Philippines" target="_blank">
+      Blk 27 Lot 11 Rosal Street, Pembo, Taguig City, Philippines
+    </a>
+  </p>
+  <p>💻 <strong>GitHub:</strong> 
+    <a href="https://github.com/account" target="_blank">github.com/account</a>
+  </p>
+</div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Joey Ann Ramos</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      try {
+        const response = await fetch("http://localhost:3000/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message })
+        });
+
+        if (response.ok) {
+          document.getElementById("formResponse").textContent = "Message sent successfully!";
+          this.reset();
+        } else {
+          document.getElementById("formResponse").textContent = "Failed to send message.";
+        }
+      } catch (err) {
+        document.getElementById("formResponse").textContent = "Error connecting to server.";
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
